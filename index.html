@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ahosanul Islam Takim | EEE Portfolio</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=DM+Sans:wght@400;500;700&display=swap">
+<style>
+:root{--ink:#0f2a4a;--text:#25364a;--muted:#5b6b7d;--paper:#fafbfc;--line:#d9e0e8;--signal:#0e7c86;--tint:#eaf4f5}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',Arial,sans-serif;color:var(--text);background:var(--paper);line-height:1.65;font-size:17px}
+h1,h2,h3{font-family:'Bricolage Grotesque',Georgia,serif;color:var(--ink);line-height:1.15}
+a{color:var(--signal)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--signal);outline-offset:3px}
+.wrap{max-width:960px;margin:0 auto;padding:0 24px}
+nav{position:sticky;top:0;background:rgba(250,251,252,.96);border-bottom:1px solid var(--line);z-index:5}
+nav .wrap{display:flex;gap:6px 20px;flex-wrap:wrap;padding-top:12px;padding-bottom:12px}
+nav a{color:var(--ink);text-decoration:none;font-weight:500;font-size:15px}
+nav a:hover{color:var(--signal)}
+.hero{padding:64px 0 48px}
+.hero .wrap{display:grid;grid-template-columns:1fr 280px;gap:40px;align-items:center}
+.hero h1{font-size:clamp(38px,7vw,62px);letter-spacing:-.02em}
+.role{font-size:21px;color:var(--signal);font-weight:700;margin:10px 0 16px}
+.photo{width:100%;aspect-ratio:1/1;border-radius:50%;background:var(--tint);border:3px solid var(--signal);display:flex;align-items:center;justify-content:center;font-family:'Bricolage Grotesque',Georgia,serif;font-size:64px;color:var(--ink);overflow:hidden}
+.photo img{width:100%;height:100%;object-fit:cover}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.btn{display:inline-block;padding:11px 20px;border-radius:6px;font-weight:700;text-decoration:none;border:2px solid var(--ink);color:var(--ink)}
+.btn.main{background:var(--ink);color:#fff}
+.btn:hover{background:var(--signal);border-color:var(--signal);color:#fff}
+.wave{display:block;width:100%;height:auto;margin-top:36px}
+.wave path{fill:none;stroke:var(--signal);stroke-width:3;stroke-linejoin:round;stroke-linecap:round}
+.wave line{stroke:var(--line);stroke-width:1.5}
+section{padding:56px 0;border-top:1px solid var(--line)}
+h2{font-size:32px;margin-bottom:22px}
+h3{font-size:20px;margin-bottom:4px}
+.video{position:relative;aspect-ratio:16/9;background:var(--tint);border-radius:10px;overflow:hidden;display:flex;align-items:center;justify-content:center;color:var(--muted);text-align:center;padding:20px}
+.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.card{background:var(--tint);border-radius:10px;padding:22px}
+.card .when{color:var(--muted);font-size:15px;margin-bottom:8px}
+.card .btn{margin-top:14px;padding:8px 16px;font-size:15px}
+.item{padding:0 0 22px 20px;border-left:3px solid var(--line)}
+.when{color:var(--muted);font-size:15px}
+ul{padding-left:20px}
+li{margin-bottom:6px}
+.project{background:var(--tint);border-radius:10px;padding:28px}
+.ph{margin-top:18px;border:2px dashed var(--signal);border-radius:8px;padding:22px;text-align:center;color:var(--muted);font-size:15px}
+.steps{display:grid;gap:14px;margin-top:18px}
+.steps div{background:#fff;border-radius:8px;padding:14px 18px}
+.steps b{color:var(--ink)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.contact p{margin-bottom:8px}
+.form{min-height:320px;background:var(--tint);border-radius:10px;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;color:var(--muted)}
+.form iframe{width:100%;height:520px;border:0}
+footer{padding:28px 0 40px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+@media(max-width:700px){.hero .wrap,.contact-grid{grid-template-columns:1fr}.photo{max-width:220px;order:-1}}
+</style>
+</head>
+<body>
+<nav aria-label="Sections"><div class="wrap">
+<a href="#home">Home</a><a href="#highlights">Highlights</a><a href="#qualification">Qualification</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#video">Intro video</a><a href="#contact">Contact</a>
+</div></nav>
+
+<header class="hero" id="home"><div class="wrap">
+<div>
+<h1>Hi, I'm Ahosanul!</h1>
+<p class="role">EEE student | Power and electronics</p>
+<p>I'm a BSc EEE student at American International University-Bangladesh with a strong foundation in electrical circuits, electronic systems, and power systems. I have hands-on exposure to UPS, VFD, battery systems, and solar design. I'm seeking an entry-level role where I can build practical skills and contribute to efficient engineering solutions.</p>
+<div class="btns">
+<a class="btn main" href="#skills">Skills</a>
+<a class="btn" href="#qualification">Qualification</a>
+<a class="btn" href="#projects">Projects</a>
+<a class="btn" id="cv" href="#qualification">Download CV</a>
+</div>
+</div>
+<div class="photo" id="photo" aria-label="Profile photo">AT</div>
+<svg class="wave" viewBox="0 0 900 60" role="img" aria-label="Signal trace" style="grid-column:1/-1">
+<line x1="0" y1="45" x2="900" y2="45"/>
+<path d="M0 45 H150 L162 8 L176 56 L190 18 L204 45 H330 L342 6 L356 58 L370 16 L384 45 H900"/>
+</svg>
+</div></header>
+
+<main>
+<section id="highlights"><div class="wrap">
+<h2>Recent highlights</h2>
+<div class="grid">
+<div class="card"><h3>Campus Ambassador</h3><p class="when">Lotto Bangladesh | Aug 2026 to present</p><p>Selected for the Lotto Campus Icon Program. I represent the brand and promote awareness across campus.</p></div>
+<div class="card"><h3>AIUB Robotics Crew</h3><p class="when">General member | Current</p><p>Member of the university robotics club.</p></div>
+<div class="card"><h3>BNCC Senior Cadet</h3><p class="when">College | Attestation 2022</p><p>Served as a senior cadet with the 58 BNCC Squadron, Jashore.</p></div>
+<div class="card"><h3>Wintex Training</h3><p class="when">2022</p><p>Completed the training successfully.</p></div>
+</div>
+</div></section>
+
+<section id="video"><div class="wrap">
+<h2>Introduction video</h2>
+<div class="video" id="videoBox">Add your YouTube video ID in the settings at the bottom of this file.</div>
+</div></section>
+
+<section id="qualification"><div class="wrap">
+<h2>Qualification</h2>
+<div class="item"><h3>BSc in Electrical and Electronics Engineering</h3><p>American International University-Bangladesh</p><p class="when">May 2024 to present | CGPA 3.27 (up to 8th semester)</p></div>
+<div class="item"><h3>Higher Secondary Certificate (HSC)</h3><p>Jessore Govt. City College, Jessore</p><p class="when">Feb 2020 to Dec 2022 | GPA 5.00</p></div>
+<div class="item"><h3>Secondary School Certificate (SSC)</h3><p>Jessore Zilla School, Jessore</p><p class="when">Jan 2018 to Feb 2020 | GPA 5.00</p></div>
+<h3 style="margin-top:28px">Relevant courses</h3>
+<p>Electrical circuits, electronic devices, digital logic, power systems, electrical machines. Replace this line with the courses you actually took.</p>
+<p style="margin-top:16px"><a class="btn" id="cv2" href="#qualification">Open my CV</a></p>
+</div></section>
+
+<section id="skills"><div class="wrap">
+<h2>Skills</h2>
+<div class="grid">
+<div class="card"><h3>Technical</h3><ul><li>UPS and VFD solutions</li><li>Battery charger and battery systems</li><li>Electrical and power equipment</li><li>Solar system design</li></ul></div>
+<div class="card"><h3>Software</h3><ul><li>AutoCAD</li><li>NI Multisim</li><li>MS Word, PowerPoint, Excel</li></ul></div>
+<div class="card"><h3>Transferable</h3><ul><li>Sales and marketing</li><li>Brand promotion</li><li>Teamwork and leadership (Robotics Crew, BNCC)</li></ul></div>
+</div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+<h2>Projects</h2>
+<div class="project">
+<h3>Clap-Controlled Light System</h3>
+<p>A lighting system that turns a light on or off when it hears a hand clap.</p>
+<div class="steps">
+<div><b>Problem.</b> Switch a light without touching a switch. Add one sentence on why you chose this.</div>
+<div><b>My role.</b> Built sound detection and electronic switching, and tested the circuit. Add what you did yourself.</div>
+<div><b>Design choices.</b> Name your sensor, transistor, relay or IC and why you chose each.</div>
+<div><b>Testing and results.</b> What worked, what failed, and how you fixed it.</div>
+<div><b>What I learned.</b> Hands-on experience with basic electronics, sensors, and circuit design.</div>
+</div>
+<div class="ph" id="projBox">Add a circuit diagram, Multisim screenshot, photo, or demo video here.</div>
+</div>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap">
+<h2>Contact</h2>
+<div class="contact-grid">
+<div>
+<p>Email: <a href="mailto:ahosantakim@gmail.com">ahosantakim@gmail.com</a></p>
+<p>Phone: <a href="tel:+8801814085421">01814085421</a></p>
+<p>Address: Dhaka, Bangladesh</p>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/ahosan-takim" target="_blank" rel="noopener">linkedin.com/in/ahosan-takim</a></p>
+<p style="color:var(--muted);margin-top:12px">References are available on request.</p>
+</div>
+<div class="form" id="formBox">Add your Google Form link in the settings at the bottom of this file.</div>
+</div>
+</div></section>
+</main>
+
+<footer><div class="wrap">&copy; 2026 Ahosanul Islam Takim. All rights reserved.</div></footer>
+
+<script>
+/* SETTINGS: fill these four lines, keep the quotes */
+var PHOTO_URL = "photo.jpg";   // direct image link, e.g. from Google Drive or Imgur
+var VIDEO_ID  = "";   // the part after v= in your YouTube link (intro video)
+var PROJECT_VIDEO_ID = "";   // YouTube ID of your Clap Light project video
+var FORM_URL  = "";   // Google Form link ending in /viewform?embedded=true
+var CV_URL    = "cv.pdf";   // Google Drive link to your CV PDF (share: Anyone with the link)
+
+if (PHOTO_URL) document.getElementById('photo').innerHTML = '<img src="' + PHOTO_URL + '" alt="Ahosanul Islam Takim">';
+if (VIDEO_ID) document.getElementById('videoBox').innerHTML = '<iframe src="https://www.youtube.com/embed/' + VIDEO_ID + '" title="Introduction video" allowfullscreen></iframe>';
+if (PROJECT_VIDEO_ID) { var pb = document.getElementById('projBox'); pb.className = 'video'; pb.style.marginTop = '18px'; pb.innerHTML = '<iframe src="https://www.youtube.com/embed/' + PROJECT_VIDEO_ID + '" title="Clap-Controlled Light System demo" allowfullscreen></iframe>'; }
+if (FORM_URL) document.getElementById('formBox').outerHTML = '<iframe style="width:100%;height:520px;border:0" src="' + FORM_URL + '" title="Contact form"></iframe>';
+if (CV_URL) ['cv','cv2'].forEach(function(id){var a=document.getElementById(id);a.href=CV_URL;a.target='_blank';a.rel='noopener';});
+</script>
+</body>
+</html>
